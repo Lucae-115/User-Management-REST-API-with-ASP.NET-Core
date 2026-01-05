@@ -1,47 +1,23 @@
 # User Management REST API with ASP.NET Core
 
-A simple and extensible REST API for managing user data, built with ASP.NET Core.  
-This project was developed as part of a learning assignment and includes full CRUD functionality, validation, and custom middleware. GitHub Copilot was used throughout the development process for code generation, debugging, and improvements.
-
----
+This project is a simple RESTful API built with ASP.NET Core for managing users.
 
 ## Features
+- CRUD operations (GET, POST, PUT, DELETE)
+- Input validation for user data
+- Custom middleware for request logging
+- Exception handling middleware
+- Swagger / OpenAPI integration
+- Built using GitHub Copilot for code generation and debugging
 
-- **CRUD Endpoints for Users**
-  - `GET /users` – Retrieve all users
-  - `GET /users/{id}` – Retrieve a user by ID
-  - `POST /users` – Create a new user
-  - `PUT /users/{id}` – Update an existing user
-  - `DELETE /users/{id}` – Delete a user
+## Endpoints
+- GET /api/users
+- GET /api/users/{id}
+- POST /api/users
+- PUT /api/users/{id}
+- DELETE /api/users/{id}
 
-- **Validation**
-  - Required fields (e.g., name, email)
-  - Email format validation (`[EmailAddress]`)
-  - Automatic error responses for invalid data
-
-- **Middleware**
-  - Request logging
-  - Error handling
-  - (Optional) Authentication / JWT support
-
-- **Copilot Integration**
-  - Assisted code generation
-  - Debugging suggestions
-  - Improvements for validation and middleware
-
----
-
-## Technologies Used
-
-- ASP.NET Core 8 (or your version)
+## Technologies
+- ASP.NET Core Web API
 - C#
-- GitHub Copilot
-- JSON-based REST communication
-
----
-
-## Installation & Running the Project
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/Lucae-115/User-Management-REST-API-with-ASP.NET-Core.git
+- Swagger / OpenAPI
